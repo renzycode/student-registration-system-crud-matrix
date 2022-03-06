@@ -1,15 +1,11 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
 CREATE TABLE `students` (
   `STUDID` varchar(200) NOT NULL,
   `FNAME` varchar(200) NOT NULL,
   `LNAME` varchar(200) NOT NULL,
   `ADDRESS` varchar(200) NOT NULL,
-  `PHONE` varchar(200) NOT NULL.
-  PRIMARY KEY (`STUDID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `PHONE` varchar(200) NOT NULL,
+   PRIMARY KEY (`STUDID`)
+);
 
 INSERT INTO `students` (`STUDID`, `FNAME`, `LNAME`, `ADDRESS`, `PHONE`) VALUES
 ('0192-2322-I', 'Jelly', 'Ace', 'Iceland, North Pole', '1230092832'),
