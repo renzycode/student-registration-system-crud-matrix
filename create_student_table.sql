@@ -7,7 +7,8 @@ CREATE TABLE `students` (
   `FNAME` varchar(200) NOT NULL,
   `LNAME` varchar(200) NOT NULL,
   `ADDRESS` varchar(200) NOT NULL,
-  `PHONE` varchar(200) NOT NULL
+  `PHONE` varchar(200) NOT NULL.
+  PRIMARY KEY (`STUDID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `students` (`STUDID`, `FNAME`, `LNAME`, `ADDRESS`, `PHONE`) VALUES
@@ -22,7 +23,3 @@ INSERT INTO `students` (`STUDID`, `FNAME`, `LNAME`, `ADDRESS`, `PHONE`) VALUES
 ('2020-1620-A', 'Reyan Kalbo', 'Colulus', 'St. Avenue, Makati City', '1012973567'),
 ('2092-2321-G', 'Robinito', 'Reymundolisto', 'Florida, Hollywood', '1123123123'),
 ('9220-1927-F', 'Komunawa', 'Nigiri', 'Sirak, Rizal City', '03280986123');
-
-ALTER TABLE `students`
-  ADD PRIMARY KEY (`STUDID`);
-COMMIT;
